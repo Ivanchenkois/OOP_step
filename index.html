@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOP</title>
+
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header-form">
+            <img class="header-form-logo" src="img/logo.png" alt="logo_NOT_FOUND">
+            <button class="header-form-btn" id="createBtn">Create Button</button>
+        </header>
+
+
+        <section class="visit-board" id="visit-board">
+            <p class="empty-board hidden">No items have been added</p>
+        </section>
+
+
+
+        <div class="modal" id="modal">
+
+            <div class="modal-header">
+                <select name="modal-select" id="modalSelect">
+                    <option value="">Выберите врача</option>
+                    <option value="cardiologist">Кардиолог</option>
+                    <option value="dentist">Стоматолог</option>
+                    <option value="therapist">Терапевт</option>
+                </select>
+                <div class="modal-close" id="modalCloseBtn">X</div>
+            </div>
+            
+            <form action="#" class="form-item show-form" id="modal-form" onsubmit="event.preventDefault();">
+            </form>
+        </div>
+
+
+
+
+    </div>
+    <script src="script/script.js"></script>
+</body>
+</html>
+
